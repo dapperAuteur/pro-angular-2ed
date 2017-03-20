@@ -23,7 +23,15 @@
 
       todoApp.controller("ToDoCtrl", function ($scope) {
         $scope.todo = model;
-      })
+
+        $scope.incompleteCount = function () {
+          var count = 0;
+          angular.forEach($scope.todo.items, function (item) {
+            if (!item.done) { count++ }
+          });
+          return count;
+        }
+      });
     </script>
   </head>
   <body class="container" ng-controller="ToDoCtrl">
@@ -31,7 +39,9 @@
       <h1>
         {{todo.user}}'s To Do List
         <span class="label
-        label-default">{{todo.items.length}}</span>
+        label-default" ng-hide="incompleteCount() == 0">
+        {{incompleteCount()}}
+      </span>
       </h1>
     </div>
     <div class="panel">
