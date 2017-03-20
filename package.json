@@ -1,0 +1,19 @@
+{
+  "name": "pro-angular-2ed",
+  "version": "1.0.0",
+  "description": "pro angular 2 tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dapperAuteur/pro-angular-2ed.git"
+  },
+  "author": "awefulBrown",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dapperAuteur/pro-angular-2ed/issues"
+  },
+  "homepage": "https://github.com/dapperAuteur/pro-angular-2ed#readme"
+}
